@@ -1,0 +1,28 @@
+
+body div.big{
+    background-color: bisque;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+body div.big form input{
+    padding: 10px 25px;
+    background: blueviolet;
+    font-size: 20px;
+    border-radius: 7px;
+   
+}
+body h6{
+    background-color: red;
+    padding: 20px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+body div form input:hover{
+    color: rgb(0, 255, 234);
+    transition: 0.5s;
+}
