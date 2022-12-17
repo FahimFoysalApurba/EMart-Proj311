@@ -10,8 +10,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 nav{
-    background: #003380;
-    height: 80px;
+    background: blueviolet;
+    height: 100px;
     width:100%;
 }
 label.logo{
@@ -35,13 +35,19 @@ nav ul li form input{
     padding: 7px 190px;
     
 }
+
 nav ul li form button{
     padding: 7px 14px;
     font-size: 18px;
     margin-left:10px;
-    color:rgb(4, 34, 61);
+    border-radius: 4px;
+    background-color:gray;
   
-    
+
+}
+button:hover{
+    background: cadetblue;
+    transition: 0.5s;
 }
 nav ul li a{
     color:bisque;
@@ -52,6 +58,36 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active, a:hover{
+    background: cadetblue;
+    transition: 0.5s;
+
+}
+body div h6{
+    background-color: red;
+    padding: 20px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+body div.big{
+    background-color: bisque;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+
+} 
+nav  select {
+    background-color: gray;
+    font-size: 18px;
+    padding: 6px 10px;
+    margin-right:13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+select :hover{
     background: cadetblue;
     transition: 0.5s;
 

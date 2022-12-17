@@ -12,7 +12,21 @@
         <label class="logo">BK.com</label>
         <ul>
             <li>
-                <Form action="#" method="Post"><input type="text" name="search" placeholder="Search your item"> 
+                
+                <Form action="#" method="Post">
+                <select name="catagory">Catagory
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Woman-Fashion</option>
+                    <option value="men-Fashion">Men-Fashion</option>
+                    <option value="vehicle">Vehicle</option>
+                    <option value="books">Books</option>
+                    <option value="cosmatics">Cosmatics</option>
+                    <option value="sports">Sports-items</option>
+                    <option value="baby">Baby-Item</option>
+                    <option value="groceries">Groceries</option>
+                </select> 
+
+                <input type="text" name="search" placeholder="Search your item"> 
                 <button type="submit">Search</button>
                 </Form></li>
 
@@ -23,3 +37,7 @@
             
         </ul>
     </nav>
+</body>
+</head>
+        
+ 

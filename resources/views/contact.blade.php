@@ -11,19 +11,27 @@
     <nav>
         <label class="logo">BK.com</label>
         <ul>
-            <li>
-                <Form action="#" method="Post"><input type="text" name="search" placeholder="Search your item"> 
-                <button type="submit">Search</button>
-                </Form></li>
-
+           
             <li><a href="/entry">Home</a></li>
-            <li><a class="active" href="#">Contact</a></li>  
             <li><a href="/about">About</a></li> 
-                
-            
+            <li><a class="active" href="#">Contact</a></li>  
+          
         </ul>
+   </nav>
 
-    </nav>
+   <div class="big">
+    <br><br><br><br><br><br><br><br><br>
+        <h6>
+            <br><br>
+            Still There Is No Contatct link added,<br>
+        Because, this wabsite is not commercial yet
+        <br><br><br>
+    </h6>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+   
     {{View::make('footer')}}
 
     </body>

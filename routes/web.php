@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 Use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\DisplayProCon;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +35,7 @@ Route::view("/contact", "contact");
 Route::view("/UserProfile", "UserProfile");
 Route::view('/HeadUserDash', "HeadUserDash");
 Route::view('/AdminProfile', "AdminProfile");
+
 Route::get('/logout', function () {
     if (session()->has('user')){
         session()->pull('user');
@@ -40,3 +43,9 @@ Route::get('/logout', function () {
     return redirect('/entry');
 });
 Route::view("/about", "about");
+Route::view("/adminPost", "adminPost");
+Route::POST("/PostController", [PostController::class, 'postMaker']);
+Route::view("/postError", "postError");
+Route::view("/GiveOffer", "GiveOffer");
+Route::view("/DisplayAdmin", "DisplayAdmin");
+Route::get("/DisplayProCon",[DisplayProCon::class, 'display']);
