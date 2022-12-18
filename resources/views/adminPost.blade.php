@@ -10,7 +10,7 @@
 </head>
 <body>
      <div>
-        <h6>Put the Product Details below:</h6>
+        <br><br>
         <form action="/PostController" method="POST" enctype="multipart/form-data">
           @csrf
            <h4>Product's name:</h4> <br> <input type="text" name="P_name" placeholder="put product's name"><br>

@@ -31,7 +31,17 @@ class PostController extends Controller
     
          }
          else{
-                $name= $req->file('image')->store('docs');
+                
+            //$name= $req->file('image')->store('docs');
+
+            if($req->hasfile('image')){
+              $file= $req->file('image');
+              $extension= $file->getClientOriginalExtension(); // getting image extension
+              $filename= time(). '.'.$extension;
+              $file->move('uploads/products/', $filename);
+             // $product->image= $filename;
+            }
+           
 
       
                 DB::table('products')->insert([
@@ -40,14 +50,14 @@ class PostController extends Controller
                     'description'=>"$description",
                     'catagory'=>"$slctOp",
                     'No_of_copies'=>"$No_of_copy",
-                    'image'=>"$name",
+                    'image'=>"$filename",
                     'availible_status'=>"$status"
                 ]);
 
                
 
           
-                return redirect('/adminPost');
+                return redirect()->back()->with("status", "You posted Sucesfully");
 
             }
            

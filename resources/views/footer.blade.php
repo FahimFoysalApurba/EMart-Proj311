@@ -10,7 +10,7 @@
 </head>
 <body>
     <footer>
-        <div class="footer-content">
+        <div style="clear:both" class="footer-content">
             <h3>BK.com</h3>
             <p>Thanks for visiting our wabsite</p>
             <ul class="socials">
