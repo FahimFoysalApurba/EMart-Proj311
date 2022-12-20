@@ -29,9 +29,9 @@
                 <button type="submit">Search</button>
                 </Form></li>
 
-            <li><a class="active" href="#">Home</a></li>
+            <li><a href="/HomeUser">Home</a></li>
             <li><a href="/UserProfileCon">User Profile</a></li>
-            <li><a href="/cart">Cart</a></li>   
+            <li><a class="active" href="#">Cart</a></li>   
             <li><a href="/logout">logout</a></li>
                 
             

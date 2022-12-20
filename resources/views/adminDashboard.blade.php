@@ -9,6 +9,8 @@
     <title>BK.com</title>
 </head>
 <body>
+
+<br><br><br>
     <div class="bar">
       <H2>Create New Post:</H2>
       <br><br>
@@ -16,7 +18,7 @@
         <a href="/adminPost">+</a>
 
       </div>
-      <br><br><br>
+      <br><br><br><br><br><br>
       </div>
       <div class="bar">
       <H2>Give Offer on Product:</H2>
@@ -28,10 +30,6 @@
       <br><br><br>
       </div>
     
-      <div>
-        <a href="/DisplayProCon">Display Products</a>
-        
-      </div>
 
 
 </body>

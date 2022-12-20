@@ -31,7 +31,8 @@
                 </Form></li>
 
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="/AdminProfile">Admin Profile</a></li>
+            <li><a href="/DisplayProCon">Display Products</a></li>
+            <li><a href="/adminProfileController">Admin Profile</a></li>
             <li><a href="/logout">logout</a></li>
                 
             

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Product;
 
 
 class LoginController extends Controller
@@ -35,7 +36,9 @@ class LoginController extends Controller
                               if($pass_given->password==$password){
                                  $data=DB::table('users')->select('id')->where('email', $email)->first();
                                  $req->session()->put('user', $data->id);
-                                 return redirect('/userDashboard');
+                                 $data= Product::all();
+                                 return view('/userDashboard', ['products'=>$data]);
+                                // return redirect('/userDashboard');
                                 }
                               else{
                                   $flag="Either Email or Password is wrong";

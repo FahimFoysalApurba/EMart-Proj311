@@ -12,7 +12,7 @@ class DisplayProCon extends Controller
     function display(){
            $data= Product::all();
         
-
-         return view('/DisplayAdmin', ['products'=>$data]);
+           return view('/DisplayAdmin', ['products'=>$data]);
     }
+    
 }

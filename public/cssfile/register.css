@@ -14,6 +14,7 @@ body div.big form input{
     background: white;
     font-size: 20px;
     border-radius: 7px;
+    cursor:pointer;
    
 }
 body div.big form button{
@@ -24,6 +25,7 @@ body div.big form button{
     font-size: 17px;
     font-weight: bold;
     border-radius: 5px;
+    cursor:pointer;
 }
 body div.big form button:hover{
     background: cadetblue;

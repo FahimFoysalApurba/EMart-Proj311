@@ -29,14 +29,12 @@
                 <button type="submit">Search</button>
                 </Form></li>
 
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="/UserProfileCon">User Profile</a></li>
-            <li><a href="/cart">Cart</a></li>   
+            <li><a href="/adminDashboard">Home</a></li>
+            <li><a href="/DisplayProCon">Display Products</a></li>
+            <li><a class="active" href="#">Admin Profile</a></li>  
             <li><a href="/logout">logout</a></li>
                 
             
         </ul>
     </nav>
     
-</body>
-</html>

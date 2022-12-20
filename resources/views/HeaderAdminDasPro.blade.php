@@ -12,6 +12,8 @@
         <label class="logo">BK.com</label>
         <ul>
             <li>
+                
+                <Form action="#" method="Post">
                 <select name="catagory">Catagory
                     <option value="electronics">Electronics</option>
                     <option value="fashion">Woman-Fashion</option>
@@ -22,21 +24,21 @@
                     <option value="sports">Sports-items</option>
                     <option value="baby">Baby-Item</option>
                     <option value="groceries">Groceries</option>
-                </select> </li>
+                </select> 
 
-                <li> 
-                <Form action="#" method="Post"><input type="text" name="search" placeholder="Search your item"> 
+                <input type="text" name="search" placeholder="Search your item"> 
                 <button type="submit">Search</button>
                 </Form></li>
 
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="/UserProfileCon">User Profile</a></li>
-            <li><a href="/cart">Cart</a></li>   
+            <li><a href="/adminDashboard">Home</a></li>
+            <li><a class="active" href="#">Display Products</a></li>
+            <li><a href="/adminProfileController">Admin Profile</a></li>
             <li><a href="/logout">logout</a></li>
                 
             
         </ul>
     </nav>
-    
 </body>
-</html>
+</head>
+        
+ 

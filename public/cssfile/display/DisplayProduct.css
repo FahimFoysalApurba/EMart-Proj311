@@ -1,0 +1,213 @@
+
+body{
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    background: white;
+
+    
+}
+.display{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    align-items: center; 
+    margin: 50px 0px;
+}
+.item-pro{
+    float:left;
+    width:15%;
+    flex-direction: column;
+}
+.content{
+    margin: 15px;
+    box-sizing: border-box;
+    text-align:center;
+   
+    border-radius: 19px ;
+    cursor:pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.5s;
+    background:white;
+}
+
+.content:hover{
+    box-shadow:  0 3px 6px rgba(0, 0, 0, 0.15), 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+.content h3{
+    text-align: center;
+    font-size: 30px;
+    margin:0;
+    padding-top: 10px;
+}
+.content a {
+    text-decoration: none;
+
+}
+.content img{
+    width: 200px;
+    height: 220px;
+    margin: 0 auto;
+    display: block;
+}
+.content p{
+    text-align: center;
+    color:darkslategrey;
+    padding-top:0 8px;
+}
+.content h5{
+    padding-top: 15px;
+    font-size: 25px;
+    text-align: center;
+    color:black;
+    margin:0;
+}
+.content button{
+
+    text-align: center;
+    font-size: 24;
+    color: aliceblue;
+    width:80%;
+    padding: 11px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.content button:hover{
+     
+    color: aqua;
+   
+   
+}
+
+button.cart {
+    background:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+
+
+
+.item-detail{
+   
+    width: 50%;
+}
+.content-detail{
+    margin: 15px;
+    box-sizing: border-box;
+    text-align:center;
+   
+    border-radius: 30px ;
+    cursor:pointer;
+    padding-top: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+    background:white;
+}
+
+.content-detail:hover{
+    box-shadow:  0 3px 6px rgba(0, 0, 0, 0.15), 3px 6px rgba(0, 0, 0, 0.23);
+}
+.content-detail h3{
+    text-align: center;
+    font-size: 30px;
+    margin:0;
+    padding-top: 10px;
+}
+.content-detail a {
+    text-decoration: none;
+
+}
+.content-detail img{
+    width: 350px;
+    height: 410px;
+    margin: 0 auto;
+    display: block;
+}
+.content-detail p{
+    text-align: center;
+    color:darkslategrey;
+    padding-top:0 8px;
+}
+.content-detail h5{
+    padding-top: 15px;
+    font-size: 25px;
+    text-align: center;
+    color:black;
+    margin:0;
+}
+.content-detail button{
+
+    text-align: center;
+    font-size: 50;
+    color: aliceblue;
+    width:80%;
+    padding: 11px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.content-detail button:hover{
+     
+    color: aqua;
+   
+   
+}
+
+button.cart {
+    background:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+div .content-detail h4{
+    margin-top: 15px;
+}
+div .content-detail input{
+    float:center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
+div .goBack{
+   
+    color:darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/*@media(max-width:1000px){
+    .content{
+    width:45%;
+    }
+}
+@media(max-width:750px){
+    .content{
+    width:100%;
+    }
+}*/
+
+

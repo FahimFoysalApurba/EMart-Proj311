@@ -1,6 +1,3 @@
-<!-- <h1>This is user's Dashboard</h1>
-<br>
-<h2>user id, {{session('user')}}</h2> -->
 {{View::make('HeadUserDash')}}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,34 +13,29 @@
 
   <div class="display">
   
-   
-  @foreach($products as $product)
+  <div class="item-detail">
 
-  @if($product["availible_status"]=="availible")
-
+  <div class="content-detail">
 
    
-  <div class="item-pro">
-
-  <div class="content">
-
-  <a href="detail/{{$product['id']}}">
    <h3>{{$product["name"]}}</h3>
+  
    <img src="{{asset('uploads/products/'.$product->image)}}"  alt="Image"> 
    <h4>Catagory: {{$product["catagory"]}}</h4>
    <h4>Current Status: {{$product["availible_status"]}}</h4>
    <p>{{"description: ".$product["description"]}}</p>
    <h5>{{$product["price"]." taka"}}</h5>
+   <form action="/add_to_cart" method="POST">
+    @csrf
+    
+    <input type="hidden" name="product_id" value="{{$product['id']}}">
+    <h4>How many copies:</h4><input type="text" name="no_of_copies" value="1" >
    <button class="cart">Add To Cart</button>
-   </a>
+   </form>
 
    </div>
    </div>
-   
-   @endif
-
-  @endforeach
-  
+  <div class="goBack"><a href="/HomeUser"><= Go Back</a></div>
    
 </div>
 </body>

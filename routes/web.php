@@ -5,6 +5,10 @@ use App\Http\Controllers\RegisterController;
 Use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\DisplayProCon;
+use App\Http\Controllers\adminProfileController;
+use App\Http\Controllers\HomeUser;
+use App\Http\Controllers\UserProfileCon;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +53,14 @@ Route::view("/postError", "postError");
 Route::view("/GiveOffer", "GiveOffer");
 Route::view("/DisplayAdmin", "DisplayAdmin");
 Route::get("/DisplayProCon",[DisplayProCon::class, 'display']);
+Route::view("/headProfileAdmin","headProfileAdmin");
+Route::view("/AdminProfile","AdminProfile");
+Route::get("/adminProfileController",[adminProfileController::class, 'adminProfile']);
+route::view("/HeaderAdminDasPro", "HeaderAdminDasPro");
+route::view("/cart", "cart");
+Route::get("/HomeUser",[HomeUser::class, 'displayUser']);
+Route::get("/UserProfileCon",[UserProfileCon::class, 'userProfile']);
+route::view("/HeadProfileUser", "HeadProfileUser");
+Route::get("/CartController",[CartController::class, 'cartCont']);
+Route::get("detail/{id}",[HomeUser::class, 'detail']);
+Route::POST("add_to_cart",[HomeUser::class, 'addToCart']);
