@@ -31,7 +31,7 @@
 
             <li><a class="active" href="#">Home</a></li>
             <li><a href="/UserProfileCon">User Profile</a></li>
-            <li><a href="/cart">Cart</a></li>   
+            <li><a href="/CartController">Cart</a></li>   
             <li><a href="/logout">logout</a></li>
                 
             

@@ -64,3 +64,7 @@ route::view("/HeadProfileUser", "HeadProfileUser");
 Route::get("/CartController",[CartController::class, 'cartCont']);
 Route::get("detail/{id}",[HomeUser::class, 'detail']);
 Route::POST("add_to_cart",[HomeUser::class, 'addToCart']);
+Route::get("/removeCart/{id}",[HomeUser::class, 'removeCart']);
+Route::get("/orderNow/{price}",[HomeUser::class, 'order_now']);
+Route::view("/order", "order");
+Route::get("/buy/{price}",[HomeUser::class, 'buyProduct']);

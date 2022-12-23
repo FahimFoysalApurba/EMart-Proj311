@@ -172,12 +172,60 @@ button.cart {
    
    
 }
+.cart a{
+    text-align: center;
+    font-size: 50;
+    color: aliceblue;
+    width:80%;
+    padding: 11px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
-button.cart {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.cart a:hover{
+     
+    color: aqua;
+   
+   
+}
+
+.cart button{
     background:goldenrod;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     transition: 0.5s;
+    text-align: center;
+    font-size: 50;
+    color: aliceblue;
+    width:80%;
+
+    padding: 11px;
+    border: 19%;
+    outline: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cart h4{
+    margin-left: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
 }
 div .content-detail h4{
     margin-top: 15px;
@@ -197,6 +245,43 @@ div .goBack{
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bolder;
+}
+
+div.order h4{
+
+    padding: 25px;
+    background:gold;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.order button{
+   
+        background: green;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        transition: 0.5s;
+        text-align: center;
+        font-size: 30px;
+        color: aliceblue;
+        width:10%;
+    
+        padding: 11px;
+        border: 19%;
+        outline: none;
+        cursor: pointer;
+    
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+}
+.order button:hover{
+    color: grey;
+    transition: 0.5s;
 }
 
 /*@media(max-width:1000px){

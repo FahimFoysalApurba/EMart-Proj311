@@ -31,14 +31,25 @@
    <h3>{{$product["name"]}}</h3>
    <img src="{{asset('uploads/products/'.$product->image)}}"  alt="Image"> 
    <h4>Catagory: {{$product["catagory"]}}</h4>
-   <h4>Current Status: {{$product["availible_status"]}}</h4>
+   <h4>Copies Availible: {{$product["No_of_copies"]}}</h4>
    <p>{{"description: ".$product["description"]}}</p>
    <h5>{{$product["price"]." taka"}}</h5>
-   <button class="cart">Add To Cart</button>
+
+
+    
+    <!-- <form action="/add_to_cart/{{$product['id']}}" method="POST">
+    @csrf
+    
+    <input type="text" name="product_id" value="{{$product['id']}}">
+    <input type="hidden" name="no_of_copies" value="1">
+   <button class="cart">Add To Cart</button> -->
+
+  
    </a>
 
    </div>
    </div>
+   
    
    @endif
 
