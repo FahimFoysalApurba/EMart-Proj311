@@ -5,7 +5,7 @@ use App\Http\Controllers\RegisterController;
 Use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\DisplayProCon;
-use App\Http\Controllers\adminProfileController;
+use App\Http\Controllers\AdminProfileController;
 use App\Http\Controllers\HomeUser;
 use App\Http\Controllers\UserProfileCon;
 use App\Http\Controllers\CartController;
